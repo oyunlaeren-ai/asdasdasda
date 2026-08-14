@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERAL Su Arıtma | CRM & Yönetim Sistemi</title>
+    <style>
+      html, body {
+        background-color: #020617;
+        color: #f8fafc;
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        overflow-x: hidden;
+      }
+      @keyframes pulseSlow {
+        0%, 100% { opacity: 0.5; transform: scale(0.98); }
+        50% { opacity: 1; transform: scale(1.02); }
+      }
+      @keyframes spinFast {
+        to { transform: rotate(360deg); }
+      }
+      .boot-container {
+        min-height: 100vh;
+        background-color: #020617;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+      .boot-logo {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #0284c7, #0369a1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 30px rgba(2, 132, 199, 0.4);
+        animation: pulseSlow 2s ease-in-out infinite;
+      }
+      .boot-spinner {
+        width: 18px;
+        height: 18px;
+        border: 2px solid rgba(56, 189, 248, 0.2);
+        border-top-color: #38bdf8;
+        border-radius: 50%;
+        animation: spinFast 0.8s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot-container">
+        <div class="boot-logo">
+          <svg style="width: 28px; height: 28px; color: white;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m-9-9h18" />
+          </svg>
+        </div>
+        <div style="font-size: 15px; font-weight: 800; color: #ffffff; letter-spacing: -0.02em;">ERAL SU ARITMA</div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div class="boot-spinner"></div>
+          <span style="font-size: 12px; font-weight: 600; color: #94a3b8;">Sistem Yükleniyor...</span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

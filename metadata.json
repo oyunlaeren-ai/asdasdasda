@@ -1,0 +1,6 @@
+{
+  "name": "ERAL SU ARITMA - CRM & Servis Yönetimi",
+  "description": "ERAL SU ARITMA için profesyonel su arıtma servis, müşteri, filtre takip, cihaz, randevu, personel, stok, satış ve finans yönetim sistemi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

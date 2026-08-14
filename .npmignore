@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+plesk-deploy.zip
+release-packages/
+data/
+*.pem
+*.key
+*.sqlite
+*.db
